@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  .col-sm-4l{
+    float: left;
+    width: 50%;
+  }
+  .col-sm-4r{
+    float: right;
+    width: 50%;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">DIV</a></li>
+        <li><a href="#">SPAN</a></li>
+        <li><a href="#">SUB/SUP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">DIV pielietojums</h3>
+  <img src="bilde1.jpg" class="img-responsive img-circle margin" style="display:inline" alt="joki par progr." width="350" height="350">
+  <p>Div tiek izmantots, lai kaut ko sāktu jaunā rindā un izstiepj vai samazina tā, lai tas izmantotu visu iespējamo platumu. 
+  To izmanto arī, lai savilktu vairākas darbības vienā blokā.</p> 
+  <hr>
+  <p>Piemēram, lai izveidotu kādu teksta kastīti ar citas krāsas fonu.</p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Span pielietojums</h3>
+  <p>Span tiek izmantots, ja vēlas, lai nesāktos jaunā rindā un aizņemtu tikai tik daudz vietas cik ir nepieciešams.<br>
+  Kā arī to var izmantot, lai izmainītu kādu konkrētu vārdu vai frāzi,<br> piemēram, lai izceltu citā krāsā kādu vārdu tekstā.</p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Sub/sup lietojums</h3><br>
+  <div class="row">
+    <div class="col-sm-4l">
+      <p>Sub tiek izmantot, tad ja ir nepieciešams kādu vārdu vai frāzi ir vajadzība uzrakstīt subscriptā jeb apakšrakstā.</p>
+      <img src="bilde4.jpg" class="img-responsive margin" style="width:100%" alt="joki par profr.">
+    </div>
+    <div class="col-sm-4r"> 
+      <p>Attiecīgi sup izmanto, lai paceltu vārdu vai frāzi superscriptā jeb augšrakstā, piemēram, lai uzrakstītu kāda skaitļa pakāpes.</p>
+      <img src="bilde2.jpg" class="img-responsive margin" style="width:100%" alt="joki par progr.">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <h4>cerams šis bija veicamais uzdevums, bet it kā izpildīju visus prasītos punktus prezentācijā:)<br>izmainīja Aivita Brutāne</h4>
+</footer>
+
+</body>
+</html>
