@@ -12,8 +12,6 @@ and open the template in the editor.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
     font: 20px Montserrat, sans-serif;
@@ -54,6 +52,14 @@ and open the template in the editor.
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+  .col-sm-4l{
+    float: left;
+    width: 50%;
+  }
+  .col-sm-4r{
+    float: right;
+    width: 50%;
+  }
   </style>
 </head>
 <body>
@@ -73,7 +79,7 @@ and open the template in the editor.
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">DIV</a></li>
         <li><a href="#">SPAN</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#">SUB/SUP</a></li>
       </ul>
     </div>
   </div>
@@ -82,14 +88,18 @@ and open the template in the editor.
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">DIV pielietojums</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <img src="bilde1.jpg" class="img-responsive img-circle margin" style="display:inline" alt="joki par progr." width="350" height="350">
+  <p>Div tiek izmantots, lai kaut ko sāktu jaunā rindā un izstiepj vai samazina tā, lai tas izmantotu visu iespējamo platumu. 
+  To izmanto arī, lai savilktu vairākas darbības vienā blokā.</p> 
+  <hr>
+  <p>Piemēram, lai izveidotu kādu teksta kastīti ar citas krāsas fonu.</p>
 </div>
 
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Span pielietojums</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <p>Span tiek izmantots, ja vēlas, lai nesāktos jaunā rindā un aizņemtu tikai tik daudz vietas cik ir nepieciešams.<br>
+  Kā arī to var izmantot, lai izmainītu kādu konkrētu vārdu vai frāzi,<br> piemēram, lai izceltu citā krāsā kādu vārdu tekstā.</p>
   <a href="#" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Search
   </a>
@@ -97,25 +107,22 @@ and open the template in the editor.
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin">Sub/sup lietojums</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4l">
+      <p>Sub tiek izmantot, tad ja ir nepieciešams kādu vārdu vai frāzi ir vajadzība uzrakstīt subscriptā jeb apakšrakstā.</p>
+      <img src="bilde4.jpg" class="img-responsive margin" style="width:100%" alt="joki par profr.">
     </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4r"> 
+      <p>Attiecīgi sup izmanto, lai paceltu vārdu vai frāzi superscriptā jeb augšrakstā, piemēram, lai uzrakstītu kāda skaitļa pakāpes.</p>
+      <img src="bilde2.jpg" class="img-responsive margin" style="width:100%" alt="joki par progr.">
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer>
+    <h4>cerams šis bija veicamais uzdevums, bet it kā izpildīju visus prasītos punktus prezentācijā:)<br>izmainīja Aivita Brutāne</h4>
 </footer>
 
 </body>
