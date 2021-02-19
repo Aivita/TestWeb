@@ -33,15 +33,16 @@ and open the template in the editor.
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">DIV</a></li>
-        <li><a href="#">SPAN</a></li>
-        <li><a href="#">SUB/SUP</a></li>
+        <li><a href="#div">DIV</a></li>
+        <li><a href="#span">SPAN</a></li>
+        <li><a href="#sub/sup">SUB/SUP</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
+<a id="div">
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">DIV pielietojums</h3>
   <img src="images/div_kods.jpeg" class="img-responsive" alt="div koda screenshots">
@@ -50,18 +51,32 @@ and open the template in the editor.
   <hr>
   <p>Piemēram, lai izveidotu kādu teksta kastīti ar citas krāsas fonu.</p>
 </div>
-
+</a>
 <!-- Second Container -->
+<a id="span">
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Span pielietojums</h3>
   <p><img src="images/span_kods.jpeg" class="img-responsive left" alt="span koda screenshots"> <img src="images/bilde2.jpg" class="img-responsive right" alt="joki par progr."> Span tiek izmantots, ja vēlas, lai nesāktos jaunā rindā un aizņemtu tikai tik daudz vietas cik ir nepieciešams.<br>
   Kā arī to var izmantot, lai izmainītu kādu konkrētu vārdu vai frāzi,<br> piemēram, lai izceltu citā krāsā kādu vārdu tekstā.</p>
-  <a href="https://www.google.com/search?q=memes+about+programming&sxsrf=ALeKk03SVCsUSez9QQw6tNbfTqLCi-5O2A:1611161863237&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjcn6LU_aruAhVmiYsKHUEJC1EQ_AUoAXoECBMQAw&biw=1280&bih=619" class="btn btn-default btn-lg">
+  <!--<a href="https://www.google.com/search?q=memes+about+programming&sxsrf=ALeKk03SVCsUSez9QQw6tNbfTqLCi-5O2A:1611161863237&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjcn6LU_aruAhVmiYsKHUEJC1EQ_AUoAXoECBMQAw&biw=1280&bih=619" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-search"></span> Find jokes about coding!
-  </a>
+  </a>-->
 </div>
-
+</a>
+<script>
+    window.onscroll=function() {myFunction()};
+    var navbar=document.getElementById("myNavbar");
+    var sticky=navbar.offsetTop;
+    function myFunction(){
+        if(window.pageYOffset>=sticky){
+            navbar.classList.add("sticky");
+        }else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 <!-- Third Container (Grid) -->
+<a id="sub/sup">
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Sub/sup lietojums</h3><br>
   <div class="row">
@@ -75,7 +90,7 @@ and open the template in the editor.
     </div>
   </div>
 </div>
-
+</a>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
     <h4 >
