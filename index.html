@@ -21,7 +21,7 @@ and open the template in the editor.
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="myNavbar">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -63,18 +63,6 @@ and open the template in the editor.
   </a>-->
 </div>
 </a>
-<script>
-    window.onscroll=function() {myFunction()};
-    var navbar=document.getElementById("myNavbar");
-    var sticky=navbar.offsetTop;
-    function myFunction(){
-        if(window.pageYOffset>=sticky){
-            navbar.classList.add("sticky");
-        }else{
-            navbar.classList.remove("sticky");
-        }
-    }
-</script>
 <!-- Third Container (Grid) -->
 <a id="sub/sup">
 <div class="container-fluid bg-3 text-center">    
@@ -104,6 +92,19 @@ and open the template in the editor.
     </ul>
     
 </footer>
+
+<script>
+    window.onscroll = function() {myFunction();};
+    var navbar = document.getElementById("myNavbar");
+    var sticky = navbar.offsetTop;
+    function myFunction(){
+        if (window.pageYOffset >= sticky){
+            navbar.classList.add("sticky");
+        }else{
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 
 </body>
 </html>
